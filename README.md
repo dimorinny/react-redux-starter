@@ -1,5 +1,5 @@
-React-Redux Hot Boilerplate
-=====================
+React-Redux Starter
+===================
 
 The minimal dev environment to enable live-editing React components with redux state.
 
@@ -33,7 +33,7 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger)
 
 ### Notes
-> **redux-actions** created to escape boilerplate code in action creaters.
+> **redux-actions** created to escape boilerplate code in action creators.
 
 > **type-to-reducer** create reducer functions based on an object keyed by action types
 
