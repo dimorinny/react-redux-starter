@@ -45,4 +45,4 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 * [cross-env](https://www.npmjs.com/package/cross-env)
 
 ### Notes
-> **cross env** allow us to provide a script which sets an environment using unix style. In our project it will allow you to distinguish between development and production builds.
+> **cross env** allow us to provide a script which sets an environment using unix style. In our project it will allow us to distinguish between development and production builds.
