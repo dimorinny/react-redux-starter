@@ -31,11 +31,17 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 * [redux-actions](https://github.com/acdlite/redux-actions)
 * [type-to-reducer](https://github.com/tomatau/type-to-reducer)
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger)
+* [whatwg-fetch](https://www.npmjs.com/package/whatwg-fetch)
+* [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)
 
 ### Notes
-> **redux-actions** created to escape boilerplate code in action creators.
+> **redux-actions** created to escape boilerplate code in action creators
 
 > **type-to-reducer** create reducer functions based on an object keyed by action types
+
+> **whatwg-fetch** polyfill for new fetch api
+
+> **redux-promise-middleware** simple promise middleware with type to reducer support 
 
 ### Development dependencies
 
@@ -45,4 +51,4 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 * [cross-env](https://www.npmjs.com/package/cross-env)
 
 ### Notes
-> **cross env** allow us to provide a script which sets an environment using unix style. In our project it will allow us to distinguish between development and production builds.
+> **cross env** allows us to provide a script which sets an environment using unix style. In our project it will allow us to distinguish between development and production builds.

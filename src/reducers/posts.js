@@ -18,11 +18,11 @@ export default typeToReducer({
         REJECTED: (state, action) => ({
             ...state,
             isPending: false,
-            error: action.payload
+            error: action.payload.error
         }),
         FULFILLED: (state, action) => ({
             ...state,
-            posts: action.posts,
+            posts: action.payload.posts,
             isPending: false,
             error: null
         })

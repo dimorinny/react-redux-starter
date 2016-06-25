@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createLogger from 'redux-logger';
+import promiseMiddleware from 'redux-promise-middleware';
 import rootReducer from '../reducers';
 
 function configureStore(initialState) {
@@ -14,7 +15,7 @@ function configureStore(initialState) {
 
 function getMiddleware() {
     let middleware = [
-        // Our middleware here
+        promiseMiddleware()
     ];
 
     //noinspection JSUnresolvedVariable
