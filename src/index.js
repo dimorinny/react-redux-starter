@@ -7,7 +7,7 @@ import configureStore from './store/configure-store';
 let store = configureStore({});
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store={ store }>
         <App />
     </Provider>,
     document.getElementById('root')

@@ -1,5 +1,5 @@
 import typeToReducer from 'type-to-reducer';
-import {LOAD_POSTS} from '../constants';
+import { LOAD_POSTS } from '../constants';
 
 const POSTS_DEFAULT_STATE = {
     posts: [],
