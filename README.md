@@ -49,6 +49,9 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 * [babel-loader](https://github.com/babel/babel-loader)
 * [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 * [cross-env](https://www.npmjs.com/package/cross-env)
+* [Radium](https://github.com/FormidableLabs/radium)
 
 ### Notes
 > **cross env** allows us to provide a script which sets an environment using unix style. In our project it will allow us to distinguish between development and production builds.
+
+> **Radium** is a set of tools to manage inline styles on React elements. It gives you powerful styling capabilities without CSS.

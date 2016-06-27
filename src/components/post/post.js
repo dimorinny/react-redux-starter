@@ -1,6 +1,8 @@
 //noinspection JSUnresolvedVariable
 import React, { Component, PropTypes } from 'react';
+import Radium from 'radium';
 
+@Radium
 export default class Post extends Component {
 
     static propTypes = {
@@ -16,10 +18,28 @@ export default class Post extends Component {
 
         return (
             <div>
-                <p>{ title }</p>
-                <p>{ subtitle }</p>
-                <p>{ text }</p>
+                <p style={ styles.title }>{ title }</p>
+                <p style={ styles.subtitle }>{ subtitle }</p>
+                <p style={ styles.text }>{ text }</p>
             </div>
         );
     }
 }
+
+const styles = {
+    title: {
+        backgroundColor: 'red',
+
+        ':hover': {
+            backgroundColor: 'black'
+        }
+    },
+
+    subtitle: {
+        backgroundColor: 'blue'
+    },
+
+    text: {
+        backgroundColor: 'orange'
+    }
+};
