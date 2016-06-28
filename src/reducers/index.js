@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import posts from './posts';
+import { routerReducer as routing } from 'react-router-redux';
+import post from './post';
+import event from './event';
 
 const rootReducer = combineReducers({
-    posts
+    post,
+    event,
+    routing
 });
 
 export default rootReducer;
