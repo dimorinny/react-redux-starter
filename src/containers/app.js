@@ -21,8 +21,8 @@ export default class App extends Component {
 
         return (
             <div>
-                <IndexLink to="/" style={ styles.link }>Посты</IndexLink>
-                <Link to="/event" style={ styles.link }>События</Link>
+                <IndexLink to='/' style={ styles.link }>Посты</IndexLink>
+                <Link to='/event' style={ styles.link }>События</Link>
 
                 { children }
             </div>
