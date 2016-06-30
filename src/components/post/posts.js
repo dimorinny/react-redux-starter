@@ -1,6 +1,6 @@
 //noinspection JSUnresolvedVariable
-import React, {Component, PropTypes} from "react";
-import Post from "./post";
+import React, {Component, PropTypes} from 'react';
+import Post from './post';
 
 export default class PostList extends Component {
 

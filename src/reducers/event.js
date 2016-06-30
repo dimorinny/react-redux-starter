@@ -1,5 +1,5 @@
-import typeToReducer from "type-to-reducer";
-import {LOAD_EVENTS} from "../constants";
+import typeToReducer from 'type-to-reducer';
+import {LOAD_EVENTS} from '../constants';
 
 const EVENTS_DEFAULT_STATE = {
     events: [],

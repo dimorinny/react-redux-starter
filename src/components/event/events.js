@@ -1,6 +1,6 @@
 //noinspection JSUnresolvedVariable
-import React, {Component, PropTypes} from "react";
-import Event from "./event";
+import React, {Component, PropTypes} from 'react';
+import Event from './event';
 
 export default class EventList extends Component {
 

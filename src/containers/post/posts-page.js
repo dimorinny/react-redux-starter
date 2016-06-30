@@ -1,9 +1,9 @@
 //noinspection JSUnresolvedVariable
-import React, {Component, PropTypes} from "react";
-import {bindActionCreators} from "redux";
-import {connect} from "react-redux";
-import PostList from "../../components/post/posts";
-import * as actionCreators from "../../actions/post";
+import React, {Component, PropTypes} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import PostList from '../../components/post/posts';
+import * as actionCreators from '../../actions/post';
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class PostsPage extends Component {

@@ -1,9 +1,9 @@
 //noinspection JSUnresolvedVariable
-import React, {Component, PropTypes} from "react";
-import {bindActionCreators} from "redux";
-import {connect} from "react-redux";
-import EventList from "../../components/event/events";
-import * as actionCreators from "../../actions/event";
+import React, {Component, PropTypes} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import EventList from '../../components/event/events';
+import * as actionCreators from '../../actions/event';
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class EventsPage extends Component {
