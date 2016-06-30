@@ -1,6 +1,6 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import Event from './event';
+import React, {Component, PropTypes} from "react";
+import Event from "./event";
 
 export default class EventList extends Component {
 
@@ -11,7 +11,7 @@ export default class EventList extends Component {
     };
 
     render() {
-        let { events, isPending, error } = this.props;
+        let {events, isPending, error} = this.props;
 
         return (
             <div>

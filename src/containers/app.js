@@ -1,10 +1,10 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import Radium from 'radium';
-import { Link, IndexLink } from 'react-router';
-import * as actionCreators from '../actions/post';
+import React, {Component, PropTypes} from "react";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import Radium from "radium";
+import {Link, IndexLink} from "react-router";
+import * as actionCreators from "../actions/post";
 
 @Radium
 @connect(mapStateToProps, mapDispatchToProps)
@@ -16,7 +16,7 @@ export default class App extends Component {
     };
 
     render() {
-        let { children } = this.props;
+        let {children} = this.props;
         //noinspection UnnecessaryLocalVariableJS
 
         return (
@@ -30,11 +30,11 @@ export default class App extends Component {
     }
 }
 function mapStateToProps(state) {
-    return { router: state.router };
+    return {router: state.router};
 }
 
 function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(actionCreators, dispatch) };
+    return {actions: bindActionCreators(actionCreators, dispatch)};
 }
 
 const styles = {

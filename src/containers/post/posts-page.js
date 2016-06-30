@@ -1,9 +1,9 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import PostList from '../../components/post/posts';
-import * as actionCreators from '../../actions/post';
+import React, {Component, PropTypes} from "react";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import PostList from "../../components/post/posts";
+import * as actionCreators from "../../actions/post";
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class PostsPage extends Component {
@@ -14,9 +14,9 @@ export default class PostsPage extends Component {
     };
 
     render() {
-        let { actions, postState } = this.props;
+        let {actions, postState} = this.props;
         //noinspection UnnecessaryLocalVariableJS
-        let { posts, isPending, error } = postState;
+        let {posts, isPending, error} = postState;
 
         return (
             <div>
@@ -38,9 +38,9 @@ export default class PostsPage extends Component {
 }
 
 function mapStateToProps(state) {
-    return { postState: state.post };
+    return {postState: state.post};
 }
 
 function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(actionCreators, dispatch) };
+    return {actions: bindActionCreators(actionCreators, dispatch)};
 }

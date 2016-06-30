@@ -33,7 +33,7 @@ npm run lint
 * [react-router](https://github.com/reactjs/react-router)
 * [redux-router](https://github.com/acdlite/redux-router)
 
-### Notes
+#### Notes
 > **redux-actions** created to escape boilerplate code in action creators
 
 > **type-to-reducer** create reducer functions based on an object keyed by action types
@@ -46,7 +46,7 @@ npm run lint
 
 > **redux-router** is a redux bindings for React Router
 
-### Development dependencies
+#### Development dependencies
 
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [babel-loader](https://github.com/babel/babel-loader)

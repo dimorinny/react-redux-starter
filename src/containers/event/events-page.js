@@ -1,9 +1,9 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import EventList from '../../components/event/events';
-import * as actionCreators from '../../actions/event';
+import React, {Component, PropTypes} from "react";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import EventList from "../../components/event/events";
+import * as actionCreators from "../../actions/event";
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class EventsPage extends Component {
@@ -14,9 +14,9 @@ export default class EventsPage extends Component {
     };
 
     render() {
-        let { actions, eventState } = this.props;
+        let {actions, eventState} = this.props;
         //noinspection UnnecessaryLocalVariableJS
-        let { events, isPending, error } = eventState;
+        let {events, isPending, error} = eventState;
 
         return (
             <div>
@@ -38,9 +38,9 @@ export default class EventsPage extends Component {
 }
 
 function mapStateToProps(state) {
-    return { eventState: state.event };
+    return {eventState: state.event};
 }
 
 function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(actionCreators, dispatch) };
+    return {actions: bindActionCreators(actionCreators, dispatch)};
 }

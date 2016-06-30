@@ -16,7 +16,7 @@ var server = new WebpackDevServer(webpack(config), {
 
 var app = express();
 
-app.get('/posts/', function(req, res) {
+app.get('/posts/', function (req, res) {
     var posts = {
         'posts': [
             {'title': 'Post', 'subtitle': 'Subtitle', 'text': 'This is text of my post'},
@@ -31,7 +31,7 @@ app.get('/posts/', function(req, res) {
     res.json(posts);
 });
 
-app.get('/events/', function(req, res) {
+app.get('/events/', function (req, res) {
     var events = {
         'events': [
             {'title': 'Event', 'subtitle': 'Subtitle', 'text': 'This is text of my event'},

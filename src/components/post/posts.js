@@ -1,6 +1,6 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import Post from './post';
+import React, {Component, PropTypes} from "react";
+import Post from "./post";
 
 export default class PostList extends Component {
 
@@ -11,7 +11,7 @@ export default class PostList extends Component {
     };
 
     render() {
-        let { posts, isPending, error } = this.props;
+        let {posts, isPending, error} = this.props;
 
         return (
             <div>

@@ -1,6 +1,6 @@
 //noinspection JSUnresolvedVariable
-import React, { Component, PropTypes } from 'react';
-import Radium from 'radium';
+import React, {Component, PropTypes} from "react";
+import Radium from "radium";
 
 @Radium
 export default class Event extends Component {
@@ -14,7 +14,7 @@ export default class Event extends Component {
     };
 
     render() {
-        let { title, subtitle, text } = this.props.event;
+        let {title, subtitle, text} = this.props.event;
 
         return (
             <div>
