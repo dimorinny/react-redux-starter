@@ -7,11 +7,12 @@ var server = new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
     hot: true,
     historyApiFallback: true,
-    proxy: {
-        '^\/posts|events': {
-            target: 'http://127.0.0.1:3001'
+    proxy: [
+        {
+            path: '^\/(posts|events)/',
+            target: 'http://localhost:3001'
         }
-    }
+    ]
 });
 
 var app = express();

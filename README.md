@@ -7,7 +7,7 @@ The minimal dev environment to enable live-editing React components with redux s
 
 ```
 npm install
-npm local
+npm run local
 open http://localhost:3000
 ```
 
