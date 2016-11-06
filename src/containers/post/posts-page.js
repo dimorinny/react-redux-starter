@@ -1,4 +1,3 @@
-//noinspection JSUnresolvedVariable
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -15,7 +14,6 @@ export default class PostsPage extends Component {
 
     render() {
         let {actions, postState} = this.props;
-        //noinspection UnnecessaryLocalVariableJS
         let {posts, isPending, error} = postState;
 
         return (
@@ -23,7 +21,7 @@ export default class PostsPage extends Component {
                 <input
                     type='button'
                     value='Load posts'
-                    onClick={ () => this.handleLoadPostsButtonClicked(actions) }
+                    onClick={ () => PostsPage.handleLoadPostsButtonClicked(actions) }
                 />
 
                 <PostList posts={ posts } isPending={ isPending } error={ error }/>
@@ -31,8 +29,7 @@ export default class PostsPage extends Component {
         );
     }
 
-    handleLoadPostsButtonClicked(actions) {
-        //noinspection JSUnresolvedFunction
+    static handleLoadPostsButtonClicked(actions) {
         actions.loadPosts()
     }
 }

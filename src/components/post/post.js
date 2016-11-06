@@ -1,4 +1,3 @@
-//noinspection JSUnresolvedVariable
 import React, {Component, PropTypes} from 'react';
 import Radium from 'radium';
 

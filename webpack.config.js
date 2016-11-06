@@ -1,7 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 
-//noinspection JSUnresolvedFunction
 const basePlugins = [
     new webpack.DefinePlugin({
         __DEV__: process.env.NODE_ENV !== 'production',
@@ -11,7 +10,6 @@ const basePlugins = [
     })
 ];
 
-//noinspection JSUnresolvedFunction
 const devPlugins = [
     new webpack.HotModuleReplacementPlugin()
 ];
@@ -40,7 +38,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loaders: ['react-hot', 'babel'],
+            loaders: ['react-hot-loader/webpack', 'babel'],
             exclude: '/node_modules/',
             include: path.join(__dirname, 'src')
         }]

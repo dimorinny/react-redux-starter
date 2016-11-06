@@ -7,7 +7,6 @@ const POSTS_DEFAULT_STATE = {
     error: null
 };
 
-//noinspection JSUnusedGlobalSymbols
 export default typeToReducer({
     [LOAD_POSTS]: {
         PENDING: (state, action) => ({

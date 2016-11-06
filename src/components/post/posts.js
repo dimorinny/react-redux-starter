@@ -1,4 +1,3 @@
-//noinspection JSUnresolvedVariable
 import React, {Component, PropTypes} from 'react';
 import Post from './post';
 
@@ -15,12 +14,12 @@ export default class PostList extends Component {
 
         return (
             <div>
-                { posts.map((item, index) => this.renderPost(item, index)) }
+                { posts.map((item, index) => PostList.renderPost(item, index)) }
             </div>
         )
     }
 
-    renderPost(post, index) {
+    static renderPost(post, index) {
         return (
             <Post key={ index } post={ post }/>
         )

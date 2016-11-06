@@ -1,4 +1,3 @@
-//noinspection JSUnresolvedVariable
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -15,7 +14,6 @@ export default class EventsPage extends Component {
 
     render() {
         let {actions, eventState} = this.props;
-        //noinspection UnnecessaryLocalVariableJS
         let {events, isPending, error} = eventState;
 
         return (
@@ -23,7 +21,7 @@ export default class EventsPage extends Component {
                 <input
                     type='button'
                     value='Load events'
-                    onClick={ () => this.handleLoadEventsButtonClicked(actions) }
+                    onClick={ () => EventsPage.handleLoadEventsButtonClicked(actions) }
                 />
 
                 <EventList events={ events } isPending={ isPending } error={ error }/>
@@ -31,8 +29,7 @@ export default class EventsPage extends Component {
         );
     }
 
-    handleLoadEventsButtonClicked(actions) {
-        //noinspection JSUnresolvedFunction
+    static handleLoadEventsButtonClicked(actions) {
         actions.loadEvents()
     }
 }

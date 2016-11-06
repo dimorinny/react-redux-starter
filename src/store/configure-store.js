@@ -21,7 +21,6 @@ function getMiddleware() {
         promiseMiddleware()
     ];
 
-    //noinspection JSUnresolvedVariable
     if (__DEV__) {
         middleware = [...middleware, createLogger()];
     }
@@ -34,9 +33,7 @@ function getEnhancers() {
         // Our enhancers here
     ];
 
-    //noinspection JSUnresolvedVariable
     if (__DEV__ && window.devToolsExtension) {
-        //noinspection JSUnresolvedFunction
         enhancers = [...enhancers, window.devToolsExtension()];
     }
 
@@ -44,7 +41,6 @@ function getEnhancers() {
 }
 
 function enableHotLoader(store) {
-    //noinspection JSUnresolvedVariable
     if (__DEV__ && module.hot) {
         module.hot.accept('../reducers', () => {
             const nextRootReducer = require('../reducers');

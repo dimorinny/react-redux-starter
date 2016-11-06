@@ -7,7 +7,6 @@ const EVENTS_DEFAULT_STATE = {
     error: null
 };
 
-//noinspection JSUnusedGlobalSymbols
 export default typeToReducer({
     [LOAD_EVENTS]: {
         PENDING: (state, action) => ({
