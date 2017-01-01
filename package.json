@@ -27,14 +27,14 @@
         "radium": "^0.18.1",
         "react": "^15.3.2",
         "react-dom": "^15.3.2",
-        "react-redux": "^4.4.5",
+        "react-redux": "^5.0.1",
         "react-router": "^3.0.0",
         "react-router-redux": "^4.0.5",
         "redux": "^3.5.2",
-        "redux-actions": "^0.13.0",
+        "redux-actions": "^1.2.0",
         "redux-logger": "^2.6.1",
         "redux-promise-middleware": "^4.1.0",
         "type-to-reducer": "^1.0.1",
-        "whatwg-fetch": "^1.0.0"
+        "whatwg-fetch": "^2.0.1"
     }
 }
