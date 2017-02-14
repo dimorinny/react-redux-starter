@@ -1,0 +1,15 @@
+.title {
+    background-color: red
+}
+
+.title:hover {
+    background-color: black
+}
+
+.subtitle {
+    background-color: blue
+}
+
+.text {
+    background-color: orange
+}

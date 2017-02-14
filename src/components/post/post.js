@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
-import Radium from 'radium';
+import './post.css';
 
-@Radium
 export default class Post extends Component {
 
     static propTypes = {
@@ -17,28 +16,10 @@ export default class Post extends Component {
 
         return (
             <div>
-                <p style={ styles.title }>{ title }</p>
-                <p style={ styles.subtitle }>{ subtitle }</p>
-                <p style={ styles.text }>{ text }</p>
+                <p className="title">{ title }</p>
+                <p className="subtitle">{ subtitle }</p>
+                <p className="text">{ text }</p>
             </div>
         );
     }
 }
-
-const styles = {
-    title: {
-        backgroundColor: 'red',
-
-        ':hover': {
-            backgroundColor: 'black'
-        }
-    },
-
-    subtitle: {
-        backgroundColor: 'blue'
-    },
-
-    text: {
-        backgroundColor: 'orange'
-    }
-};

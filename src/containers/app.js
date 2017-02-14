@@ -1,11 +1,10 @@
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import Radium from 'radium';
 import {Link, IndexLink} from 'react-router';
 import * as actionCreators from '../actions/post';
+import './app.css';
 
-@Radium
 @connect(mapStateToProps, mapDispatchToProps)
 export default class App extends Component {
 
@@ -19,8 +18,8 @@ export default class App extends Component {
 
         return (
             <div>
-                <IndexLink to='/' style={ styles.link }>Посты</IndexLink>
-                <Link to='/event' style={ styles.link }>События</Link>
+                <IndexLink to='/' className="link">Посты</IndexLink>
+                <Link to='/event' className="link">События</Link>
 
                 { children }
             </div>
@@ -34,9 +33,3 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {actions: bindActionCreators(actionCreators, dispatch)};
 }
-
-const styles = {
-    link: {
-        margin: '8px'
-    }
-};
