@@ -29,7 +29,6 @@ npm run lint
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger)
 * [whatwg-fetch](https://www.npmjs.com/package/whatwg-fetch)
 * [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)
-* [Radium](https://github.com/FormidableLabs/radium)
 * [react-router](https://github.com/reactjs/react-router)
 * [redux-router](https://github.com/acdlite/redux-router)
 
@@ -42,8 +41,6 @@ npm run lint
 
 > **redux-promise-middleware** simple promise middleware with type to reducer support
 
-> **Radium** is a set of tools to manage inline styles on React elements. It gives you powerful styling capabilities without CSS
-
 > **redux-router** is a redux bindings for React Router
 
 #### Development dependencies
@@ -52,6 +49,9 @@ npm run lint
 * [babel-loader](https://github.com/babel/babel-loader)
 * [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 * [cross-env](https://www.npmjs.com/package/cross-env)
+* [style-loader](https://github.com/webpack-contrib/style-loader)
+* [postcss-loader](https://github.com/postcss/postcss-loader)
+* [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 
 ### Notes
 > **cross env** allows us to provide a script which sets an environment using unix style. In our project it will allow us to distinguish between development and production builds.
