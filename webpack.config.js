@@ -38,7 +38,6 @@ const devBabelLoaders = [
 ];
 
 const prodPlugins = [
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
         children: true,
@@ -52,6 +51,7 @@ const prodPlugins = [
         minRatio: 0.8
     }),
     new webpack.optimize.UglifyJsPlugin({
+        sourcemap: true,
         beautify: false,
         comments: false,
         compress: {
@@ -84,14 +84,14 @@ module.exports = {
     },
     plugins: plugins,
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js$/,
-            loaders: ['react-hot-loader/webpack', 'babel'],
+            use: ['react-hot-loader/webpack', 'babel-loader'],
             exclude: '/node_modules/',
             include: path.join(__dirname, 'src')
         }, {
             test: /\.css$/,
-            loaders: ['style-loader', 'css-loader', 'postcss-loader'],
+            use: ['style-loader', 'css-loader', 'postcss-loader'],
             exclude: '/node_modules/',
             include: path.join(__dirname, 'src')
         }]
