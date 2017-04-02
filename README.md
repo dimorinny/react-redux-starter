@@ -6,8 +6,8 @@ The minimal dev environment to enable live-editing React components with redux s
 ### Usage
 
 ```
-npm install
-npm run local
+yarn install
+yarn run local
 open http://localhost:3000
 ```
 
@@ -16,7 +16,7 @@ open http://localhost:3000
 This boilerplate project includes React-friendly ESLint configuration.
 
 ```
-npm run lint
+yarn run lint
 ```
 
 ### Dependencies
